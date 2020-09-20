@@ -1,0 +1,18 @@
+<mvc:View controllerName="com.smax.ZBATCH41_CREATE.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<List items="{m1>/Products}">
+						<StandardListItem title="{m1>ProductID}" type="Active" press="onPrd"/>
+					</List>
+					
+						<List items="{/Customers}">
+						<StandardListItem title="{CustomerID}" type="Active" press="onItemPress"/>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
