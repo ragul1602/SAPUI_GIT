@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.smax.odata.read.Z_ODATA_READ.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+						labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+						columnsL="1" columnsM="1" singleContainerFullSize="false">
+						<f:content>
+							<Label text="ProductID"/>
+							<Input id="idProduct"/>
+						    <Label text="Name"/>
+							<Input id="idName"/>
+							<Label text="Description"/>
+							<Input id="idDescription"/>
+							<Label text="ReleaseDate"/>
+							<Input id="idReleaseDate"/>
+							<Label text="DiscontinuedDate"/>
+							<Input id="idDiscontinuedDate"/>
+							<Label text="Rating"/>
+							<Input id="idRating"/>
+							<Label text="Price"/>
+							<Input id="Price"/>
+							<Label text=""/>
+							<Button text="Create" press="onCreate"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
