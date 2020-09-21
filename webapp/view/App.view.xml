@@ -1,0 +1,43 @@
+<mvc:View controllerName="com.batch41.db02.ZBATCH41_DB02.controller.App" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<App id="idAppControl">
+		<pages>
+			<Page>
+				<content>
+					<Select>
+						<items>
+							<core:Item text="India"/>
+							<core:Item text="USA"/>
+							<core:Item text="Finland"/>
+						</items>
+					</Select>
+					<Select>
+						<items>
+							<core:Item text="{/countryList/0/name}"/>
+							<core:Item text="{/countryList/1/name}"/>
+							<core:Item text="{/countryList/2/name}"/>
+						</items>
+					</Select>
+					
+					<Select binding="{/countryList}">
+						<items>
+							<core:Item text="{0/name}"/>
+							<core:Item text="{1/name}"/>
+							<core:Item text="{2/name}"/>
+						</items>
+					</Select>
+					
+					<Select items="{/countryList}">
+						<items>
+							<core:Item text="{name}"/>
+						</items>
+					</Select>
+					
+				
+					
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
