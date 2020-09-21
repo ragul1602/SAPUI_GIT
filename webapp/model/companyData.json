@@ -1,0 +1,10 @@
+{
+   "title" : "S-Max Technologies",
+   "name" : "S-Max",
+   "address" : {
+		"streetNo" : 504,
+	    "city" : "Bangaluru", 
+	    "country" : "India"
+	   }
+   
+}

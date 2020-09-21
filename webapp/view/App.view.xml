@@ -1,0 +1,30 @@
+<mvc:View controllerName="com.batch41.db.ZBATCH41_DB01.controller.App" 
+xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	>
+	<App id="idAppControl">
+		<pages>
+			<Page title="{/title}">
+				<content>
+					<form:SimpleForm>
+						<form:title>
+							<core:Title text="Address"/>
+						</form:title>
+						<form:content>
+							<Label text="Name"/>
+							<Text text="{/name}"/>
+							<Label text="Street Number"/>
+							<Text text="{/address/streetNo}"/>
+							<Label text="City"/>
+							<Text text="{/address/city}"/>
+							<Label text="Country"/>
+							<Text text="{/address/country}"/>
+						</form:content>
+					</form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
