@@ -1,0 +1,26 @@
+<mvc:View controllerName="com.smax.odata.ZPROJ_ODATA_CREATE.controller.ODT_CREATE" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+						<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="Caretgory Creation Page" labelSpanXL="3" labelSpanL="3"
+						labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+						columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+							<Label  text='Category ID'/>
+							<Input id="ID"/>
+							<Label  text='Category Name'/>
+							<Input id="Name"/>
+							
+							<Button text='Create' press='onPress'/>
+							</f:content>
+							
+							
+							</f:SimpleForm>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
