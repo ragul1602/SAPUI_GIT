@@ -1,0 +1,66 @@
+<mvc:View controllerName="COM.SMAX.TABLE.ZPROJ_UITABLE.controller.UI_TABLE" xmlns="sap.ui.table" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified" xmlns:c="sap.ui.core" xmlns:m="sap.m" height="100%">
+	<!--xmlns="sap.ui.table" xmlns:u="sap.ui.unified"-->
+	<!--	xmlns:c="sap.ui.core"-->
+	<!--	xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" -->
+	<!--	xmlns:m="sap.m">-->
+	<m:App id="idAppControl">
+		<m:pages>
+			<m:Page title="{i18n>title}">
+				<m:content>
+					<Table rows="{/Products}" title="Products" selectionMode="MultiToggle" 
+					visibleRowCount="20">
+						<columns>
+							<Column width="11rem">
+								<m:Label text="Product Name"/>
+								<template>
+									<m:Text text="{ProductName}" wrapping="false"/>
+								</template>
+							</Column>
+							<Column width="11rem">
+								<m:Label text="Product Id"/>
+								<template>
+									<m:Input value="{ProductID}"/>
+								</template>
+							</Column>
+							<Column width="6rem" hAlign="End">
+								<m:Label text="Quantity"/>
+								<template>
+									<m:Label text="{QuantityPerUnit}"/>
+								</template>
+							</Column>
+							<Column width="9rem">
+								<m:Label text="Unit Price"/>
+								<template>
+									<m:Label text="{UnitPrice}"/>
+								</template>
+							</Column>
+								<Column width="9rem">
+								<m:Label text="Units In Stock"/>
+								<template>
+									<m:Label text="{UnitsInStock}"/>
+								</template>
+							</Column>
+							<Column width="9rem">
+								<m:Label text="Stock Status"/>
+																<template>
+									<!--<m:Label text="{UnitsInStock}"/>-->
+							<m:ObjectStatus text="{= ${UnitsInStock} > 10 ? 'INSTOCK' : 'OUT OF STOCK' }"
+							state="{
+								path: 'Available',
+								formatter: '.formatAvailableToObjectState'
+							}"/>
+								</template>
+							</Column>
+							<Column width="9rem">
+								<m:Label text="Discontinued"/>
+								<template>
+									<m:CheckBox selected="{Discontinued}"/>
+								</template>
+							</Column>
+							</columns></Table>
+						</m:content>
+					</m:Page>
+				</m:pages>
+				</m:App>
+				</mvc:View>
