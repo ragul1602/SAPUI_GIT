@@ -1,0 +1,76 @@
+<mvc:View controllerName="COM.SAMX.TABLES.ZPROJECT_ODATA_2TABLES.controller.TABLES_PARALEL" 
+xmlns:mvc="sap.ui.core.mvc"	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" 
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core = "sap.ui.core">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+						<HBox>
+						<Select id="dropdown" items='{/Employees}'>
+							<items>
+								<core:Item text='{EmployeeID}'/>
+							</items>
+						</Select>
+						<VBox>
+						<Button text='GetData' press='onPress'/>
+						<Button text='Refresh' press='onRefresh'/>
+						</VBox>
+					</HBox>
+					
+					<f:SimpleForm id="sForm" visible='true' binding='{/Employees(2)}'>
+						<f:content>
+							<Label text='Employee ID'/>
+							<Text text='{EmployeeID}'/>
+							<Label text='First Name'/>
+							<Text text='{FirstName}'/>
+							<Label text='Last Name'/>
+							<Text text='{LastName}'/>
+						</f:content>
+					</f:SimpleForm>
+					<Table mode="MultiSelect" id="idTable" items="{/Employees}" visible='true' width="1000px">
+						<columns>
+							<Column>
+								<Text text='Employee ID'/>
+							</Column>
+							<Column>
+								<Text text='First Name'/>
+							</Column>
+							<Column>
+								<Text text='Last Name'/>
+							</Column>
+								<Column>
+								<Text text='City'/>
+							</Column>
+							<Column>
+								<Text text='Region'/>
+							</Column>
+								<Column>
+								<Text text='Postal Code'/>
+							</Column>
+								<Column>
+								<Text text='Country'/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text='{EmployeeID}'/>
+									<Text text='{FirstName}'/>
+									<Text text='{LastName}'/>
+									<Text text='{City}'/>
+									<Text text='{Region}'/>
+									<Text text='{PostalCode}'/>
+									<Text text='{Country}'/>
+									
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<!--<HBox>-->
+					<!--</HBox>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
