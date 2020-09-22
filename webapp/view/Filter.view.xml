@@ -1,0 +1,55 @@
+<mvc:View controllerName="com.smax.filt.ZPROJECT_FILTER.controller.Filter" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" 
+	xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content> 
+					<HBox>
+						<Select id="dropdown" items='{/Employees}'>
+							<items>
+								<core:Item text='{EmployeeID}'/>
+							</items>
+						</Select>
+						<Button text='GetData' press='onPress'/>
+					</HBox>
+					
+					<f:SimpleForm id="sForm" visible='true' binding='{/Employees(2)}'>
+						<!--<f:content>-->
+							<Label text='Employee ID'/>
+							<Text text='{EmployeeID}'/>
+							<Label text='First Name'/>
+							<Text text='{FirstName}'/>
+							<Label text='Last Name'/>
+							<Text text='{LastName}'/>
+						<!--</f:content>-->
+					</f:SimpleForm>
+					<Table mode="SingleSelectMaster" id="idTable" items="{/Employees}" visible='true'>
+						<columns>
+							<Column>
+								<Text text='Employee ID'/>
+							</Column>
+							<Column>
+								<Text text='First Name'/>
+							</Column>
+							<Column>
+								<Text text='Last Name'/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text='{EmployeeID}'/>
+									<Text text='{FirstName}'/>
+									<Text text='{LastName}'/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<!--<HBox>-->
+					<!--</HBox>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
