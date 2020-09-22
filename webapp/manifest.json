@@ -1,0 +1,160 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "com.smax.flexi.ZPROJ_FLEXI",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"OData.svc": {
+				"uri": "/Northwind2/V2/(S(40nmbdluyrancsdrd35ohgal))/OData/OData.svc/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.smax.flexi.ZPROJ_FLEXI.view.app",
+			"type": "XML",
+			"id": "fc"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.smax.flexi.ZPROJ_FLEXI.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "OData.svc",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.f.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.smax.flexi.ZPROJ_FLEXI.view",
+				"controlId": "fc",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "Supplier",
+				"pattern": ":layout:",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Supplier", "SupplierDetail"]
+			}, {
+				"name": "SupplierDetail",
+				"pattern": "SupplierDetail({arg})/{layout}",
+				"titleTarget": "SupplierDetail",
+				"greedy": false,
+				"target": ["Supplier", "SupplierDetail"]
+			}, {
+				"name": "Third",
+				"pattern": "SupplierDetail({arg})/{PRD}/{layout}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["Supplier", "SupplierDetail", "Third"]
+			}, {
+				"pattern": "fullPage/{layout}",
+				"name": "fullPage",
+				"target": "fullPage",
+					"layout": "EndColumnFullScreen"
+			}],
+			"targets": {
+				"TargetView1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "app",
+					"controlId": "flexibleColumnLayout"
+				},
+				"app": {
+					"viewType": "XML",
+					"viewName": "app",
+					"controlId": "",
+					"controlAggregation": ""
+				},
+				"SupplierDetail": {
+					"viewType": "XML",
+					"viewName": "SupplierDetail",
+					"controlAggregation": "midColumnPages",
+					"controlId": "fc"
+				},
+				"Supplier": {
+					"viewType": "XML",
+					"viewName": "Supplier",
+					"controlAggregation": "beginColumnPages",
+					"controlId": "fc"
+				},
+				"Third": {
+					"viewType": "XML",
+					"viewName": "Third",
+					"controlAggregation": "endColumnPages",
+					"controlId": "fc"
+				},
+				"fullPage": {
+					"viewType": "XML",
+					"viewName": "fullPage",
+					"controlAggregation": "endColumnPages",
+					"controlId": "fc"
+				}
+			}
+		}
+	}
+}

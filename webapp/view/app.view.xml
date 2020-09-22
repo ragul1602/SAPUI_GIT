@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.smax.flexi.ZPROJ_FLEXI.controller.app" xmlns:mvc="sap.ui.core.mvc"
+displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.f">
+	<!--<App id="app">-->
+	<!--	<f:FlexibleColumnLayout id="flexibleColumnLayout" backgroundDesign="Translucent" layout="OneColumn" stateChange="onStateChanged">-->
+	<!--		<f:beginColumnPages>-->
+	<!--			<mvc:XMLView id="beginView" viewName="com.smax.flexi.ZPROJ_FLEXI.view.Supplier"/>-->
+	<!--		</f:beginColumnPages>-->
+	<!--		<f:midColumnPages>-->
+	<!--			<mvc:XMLView id="detailView" viewName="com.smax.flexi.ZPROJ_FLEXI.view.SupplierDetail"/>-->
+	<!--		</f:midColumnPages>-->
+	<!--	</f:FlexibleColumnLayout>-->
+	<!--</App>-->
+	
+	<App id="app">
+		<pages>
+	<Page>
+		
+		<f:FlexibleColumnLayout id="fc"
+		backgroundDesign="Translucent" 
+		stateChange=".onStateChanged"
+		
+		
+		layout="{lay>/layout}">
+		
+		</f:FlexibleColumnLayout>
+	
+	</Page>
+	</pages>
+	
+	</App>
+	
+	
+	
+	
+	
+</mvc:View>

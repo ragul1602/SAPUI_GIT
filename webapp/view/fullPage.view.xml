@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f"
+	controllerName="com.smax.flexi.ZPROJ_FLEXI.controller.fullPage" xmlns:semantic="sap.f.semantic" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<Pages>-->
+	<f:DynamicPage toggleHeaderOnTitleClick="false" id='app1'>
+		<!--DynamicPage Title -->
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="About supplier -- RAGAV"/>
+					<!--<Button text='BACK' press='onBack'></Button>-->
+				</f:heading>
+					<f:content>
+						<OverflowToolbar>
+							<Button text='BACK' press='onBack'></Button>
+								</OverflowToolbar>
+					</f:content>
+				<!--<f:action>-->
+				<!--	<Button text='BACK' press='onBack'></Button>-->
+				<!--	</f:action>-->
+				</f:DynamicPageTitle>
+			</f:title>
+				</f:DynamicPage>
+	<!--</Pages>-->
+	<!--<App id='app2'>-->
+	<!--	<semantic:SemanticPage id="masterPage" -->
+	<!--preserveHeaderStateOnScroll="true" toggleHeaderOnTitleClick="false">-->
+	<!--	<semantic:titleHeading>-->
+	<!--		<Title id="masterPageTitle" text="{masterView>/title}" level="H2"/>-->
+	<!--	</semantic:titleHeading>-->
+	<!--</semantic:SemanticPage>-->
+	<!--</App>-->
+</mvc:View>

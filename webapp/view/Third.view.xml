@@ -1,0 +1,57 @@
+<!--<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.smax.flexi.ZPROJ_FLEXI.controller.Third"-->
+<!--	xmlns:html="http://www.w3.org/1999/xhtml"-->
+<!--	xmlns:form="sap.ui.layout.form">-->
+<!--	<App>-->
+<!--		<pages>-->
+<!--			<Page title="Third Expansion">-->
+<!--				<content>-->
+<!--				</content>-->
+<!--			</Page>-->
+<!--		</pages>-->
+<!--	</App>-->
+<!--</mvc:View>-->
+<mvc:View controllerName="com.smax.flexi.ZPROJ_FLEXI.controller.Third" xmlns="sap.uxap" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:fo="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<f:DynamicPage toggleHeaderOnTitleClick="false">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<!--<m:FlexBox wrap="Wrap" fitContainer="true" alignItems="Center">-->
+					<m:Title text="PRODUCT DEAILS - KFC" wrapping="true" class="sapUiTinyMarginEnd"/>
+					<!--{products>text}-->
+					<!--</m:FlexBox>-->
+				</f:heading>
+				<!--***Working**				-->
+				<!--<f:breadcrumbs>-->
+				<!--	<m:Breadcrumbs>-->
+				<!--		<m:Link text="Navigate to next page…" press="onPress"/>-->
+				<!--	</m:Breadcrumbs>-->
+				<!--</f:breadcrumbs>-->
+				<!--***Working**			-->
+				<f:actions>
+					<m:Button text="Next Page" type="Emphasized" press="onPress"/>
+				</f:actions>
+				<!--<f:navigationActions>-->
+				<!--	<m:OverflowToolbarButton type="Transparent" icon="sap-icon://full-screen" press="handleFullScreen" id="enterFullScreenBtn" tooltip="Enter Full Screen Mode" visible="{= ${/actionButtonsInfo/endColumn/fullScreen} !== null }"/>-->
+				<!--	<m:OverflowToolbarButton type="Transparent" icon="sap-icon://exit-full-screen" press="handleExitFullScreen" id="exitFullScreenBtn" tooltip="Exit Full Screen Mode" visible="{= ${/actionButtonsInfo/endColumn/exitFullScreen} !== null }"/>-->
+				<!--	<m:OverflowToolbarButton type="Transparent" icon="sap-icon://decline" press="handleClose"  tooltip="Close column" visible="{= ${/actionButtonsInfo/endColumn/closeColumn} !== null }"/>-->
+				<!--</f:navigationActions>-->
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:content>
+			<fo:SimpleForm id="SimpleFormChange480_12120-2" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12"
+				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="1"
+				singleContainerFullSize="false">
+				<fo:content>
+					<core:Title text="Product Details"/>
+					<m:Label text="Product Rating"/>
+					<m:Text text="{Rating}"/>
+					<m:Label text="Product Price"/>
+					<m:Text text="{Price}"/>
+					<!--<Label text="SMS" />-->
+					<!--<Input value="{Sms}" type="Tel" />-->
+				</fo:content>
+			</fo:SimpleForm>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>
