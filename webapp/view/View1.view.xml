@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.smax.fotmat.ZPROJECT_FORMATTER.controller.View1" 
+xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<List
+		headerText="Products"
+		items="{
+			path: '/Products'
+		
+		}">
+		<items>
+			<StandardListItem
+				title="{ProductID}"
+				description="{ProductName}"
+				
+					info = "{path:'UnitsInStock',
+					formatter:'com.smax.fotmat.ZPROJECT_FORMATTER.controller.formatter.UnitsInStock'
+				}"
+			
+				 />
+		</items>
+	</List>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
