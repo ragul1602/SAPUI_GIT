@@ -1,0 +1,6 @@
+<mvc:View controllerName="COM.SMAX.ROUTER1.ZPROJECT_ROUTER1.controller.ROOTVIEW" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+	
+	</App>
+</mvc:View>
