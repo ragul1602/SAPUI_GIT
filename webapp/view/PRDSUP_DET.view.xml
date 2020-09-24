@@ -1,0 +1,71 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="com.smax.multitab.ZPROJECT_ROUTER_MULTITAB.controller.PRDSUP_DET" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<f:SimpleForm id="SF1" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+						singleContainerFullSize="false">
+						<f:content>
+							<Button text='Third_page' press='onThird' type='Accept'/>
+							<!--<Label text="Product Detailed Display"/>-->
+							<!--<Label text="Product ID"/>-->
+							<!--<Text text="{ProductID}"/>-->
+							<!--<Label text="Product Name"/>-->
+							<!--<Text text="{ProductName}"/>-->
+							<!--<Label text="Supplier ID"/>-->
+							<!--<Text text="{SupplierID}"/>-->
+							<!--<Label text="CategoryID"/>-->
+							<!--<Text text="{CategoryID}"/>-->
+							<!--<Label text="UnitPrice"/>-->
+							<!--<Text text="{UnitPrice}"/>-->
+							<Label text="Supplier ID"/>
+							<Text text="{SupplierID}"/>
+							<Label text="Company Name"/>
+							<Text text="{CompanyName}"/>
+							<Label text="ContactName"/>
+							<Text text="{ContactName}"/>
+							<Label text="Contact Title"/>
+							<Text text="{ContactTitle}"/>
+							<Label text="City"/>
+							<Text text="{City}"/>
+							<Label text="Owndesc"/>
+							<!--Expression Binding-->
+							<Text text="{= ${City} === 'London' ? 'Ragav' : 'Rajathi' }"/> 
+							
+						</f:content>
+					</f:SimpleForm>
+					<Table showSeparators='All' id="idTable1" items="{/Products}" visible='true'>
+						<columns>
+							<Column>
+								<Text text='Product ID'/>
+								
+								
+							</Column>
+							<Column>
+								<Text text='ProductName'/>
+							</Column>
+							<Column>
+								<Text text='SupplierID'/>
+							</Column>
+							<Column>
+								<Text text='CategoryID'/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Active" press="onClick">
+								<cells>
+									<Text text='{ProductID}'/>
+									<Text text='{ProductName}'/>
+									<Text text='{SupplierID}'/>
+									<Text text='{CategoryID}'/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

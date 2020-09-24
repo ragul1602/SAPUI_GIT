@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.smax.multitab.ZPROJECT_ROUTER_MULTITAB.controller.MT_1STPAGE" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table showSeparators='All' id="idTable" items="{/Products}" visible='true'>
+						<columns>
+							<Column>
+								<Text text='Product ID'/>
+								</Column>
+								<Column>
+								<Text text='ProductName'/>
+								</Column>
+								<Column>
+								<Text text='SupplierID'/>
+								</Column>
+								<Column>
+								<Text text='CategoryID'/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Active" press="onClick">
+								<cells>
+									<Text text='{ProductID}'/>
+									<Text text='{ProductName}'/>
+									<Text text='{SupplierID}'/>
+									<Text text='{CategoryID}'/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
