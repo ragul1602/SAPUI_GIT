@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="COM.SMAX.ROUTER3.ZPROJECT_ROUTER3.controller.PAGE1_V1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="FIRST PAGE">
+				<content>
+					
+					<Button text='GOTO PAGE2' press='onPress'/>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

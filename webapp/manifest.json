@@ -1,0 +1,104 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "COM.SMAX.ROUTER3.ZPROJECT_ROUTER3",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.38.11"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "COM.SMAX.ROUTER3.ZPROJECT_ROUTER3.view.ROUTER_3",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "COM.SMAX.ROUTER3.ZPROJECT_ROUTER3.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "COM.SMAX.ROUTER3.ZPROJECT_ROUTER3.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppControl",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "PAGE1_V1",
+				"pattern": "",
+				"target": ["PAGE1_V1"],
+				"titleTarget": "TG1"
+			}, {
+				"name": "PAGE2_V2",
+				"pattern": "V2_PATRN/{x}",
+				"titleTarget": "TG2",
+				"greedy": false,
+				"target": ["PAGE2_V2"]
+			}],
+			"targets": {
+				"TargetROUTER_3": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "ROUTER_3"
+				},
+				"PAGE1_V1": {
+					"viewType": "XML",
+					"viewName": "PAGE1_V1"
+				},
+				"PAGE2_V2": {
+					"viewType": "XML",
+					"viewName": "PAGE2_V2"
+				}
+			}
+		}
+	}
+}
