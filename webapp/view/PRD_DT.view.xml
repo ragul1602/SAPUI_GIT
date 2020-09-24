@@ -1,0 +1,42 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.smax.datapass.ZPROJECT_ROUTER_DATAPASS.controller.PRD_DT" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="PRODUCT DETAILS">
+				<content>
+					<Table id="idTab" inset="false" 
+					items="{/Products}" >
+						<columns>
+							<Column width="12em">
+								<Text text="ProductName"/>
+							</Column>
+							<Column demandPopin="true">
+								<Text text="ProductID"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="SupplierID"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+								<Text text="CategoryID"/>
+							</Column>
+							<Column hAlign="End">
+								<Text text="UnitPrice"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{ProductName}" />
+									<Text text="{ProductID}"/>
+									<Text text="{SupplierID}"/>
+									<Text text="{CategoryID}"/>
+									<Text text="{UnitPrice}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
