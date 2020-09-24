@@ -1,0 +1,40 @@
+<mvc:View controllerName="com.smax.multitab.ZPROJECT_ROUTER_MULTITAB_MSEL.controller.MT_1STPAGE" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Ragav First Page">
+				<headerContent>
+					<Button icon="sap-icon://action" text='GET DETAILS' press='onClick'/>
+				</headerContent>
+				<content>
+					<Table showSeparators='All' id="idTable" mode="MultiSelect" items="{/Products}" visible='true'>
+						<columns>
+							<Column>
+								<Text text='Product ID'/>
+							</Column>
+							<Column>
+								<Text text='ProductName'/>
+							</Column>
+							<Column>
+								<Text text='SupplierID'/>
+							</Column>
+							<Column>
+								<Text text='CategoryID'/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem type="Active">
+								<cells>
+									<Text text='{ProductID}'/>
+									<Text text='{ProductName}'/>
+									<Text text='{SupplierID}'/>
+									<Text text='{CategoryID}'/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

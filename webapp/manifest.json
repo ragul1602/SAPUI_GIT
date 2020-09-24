@@ -1,0 +1,118 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "com.smax.multitab.ZPROJECT_ROUTER_MULTITAB_MSEL",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"Northwind.svc": {
+				"uri": "/Northwind/v2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.smax.multitab.ZPROJECT_ROUTER_MULTITAB_MSEL.view.MT_1STPAGE",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.smax.multitab.ZPROJECT_ROUTER_MULTITAB_MSEL.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "Northwind.svc",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.smax.multitab.ZPROJECT_ROUTER_MULTITAB_MSEL.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppControl",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "TargetMT_1STPAGE",
+				"pattern": "RouteMT_1STPAGE",
+				"target": ["TargetMT_1STPAGE"]
+			}, {
+				"name": "PRDSUP_DET",
+				"pattern": "details/{X},{Y}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["PRDSUP_DET"]
+			}],
+			"targets": {
+				"TargetMT_1STPAGE": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "MT_1STPAGE"
+				},
+				"PRDSUP_DET": {
+					"viewType": "XML",
+					"viewName": "PRDSUP_DET"
+				}
+			}
+		}
+	}
+}
