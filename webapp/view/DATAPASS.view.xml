@@ -1,0 +1,25 @@
+<mvc:View controllerName="com.smax.datapass.ZPROJECT_ROUTER_DATAPASS_SF.controller.DATAPASS" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m"   xmlns:core="sap.ui.core">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Product Selection">
+				<content>
+					<HBox>
+						<Select id='dd' items='{/Products}'>
+							<items>
+								<core:Item text='{ProductID}'/> 
+								
+							</items>
+							
+						</Select>
+						
+						<Button text='Get PRD details' press='onPress'/>
+						
+						
+					</HBox>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

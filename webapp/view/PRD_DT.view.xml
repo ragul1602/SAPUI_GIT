@@ -1,0 +1,59 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	controllerName="com.smax.datapass.ZPROJECT_ROUTER_DATAPASS_SF.controller.PRD_DT" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="PRODUCT DETAILS">
+				<content>
+					<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+						labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+						columnsL="1" columnsM="1" singleContainerFullSize="false">
+						<f:content>
+							<!--<Label text="Product Detailed Display"/>-->
+							<Label text="Product ID"/>
+							<Text text="{ProductID}"/>
+							<Label text="Product Name"/>
+							<Text text="{ProductName}"/>
+							<Label text="Supplier ID"/>
+							<Text text="{SupplierID}"/>
+							<Label text="CategoryID"/>
+							<Text text="{CategoryID}"/>
+							<Label text="UnitPrice"/>
+							<Text text="{UnitPrice}"/>
+						</f:content>
+					</f:SimpleForm>
+					<!--<Table id="idTab" inset="false" -->
+					<!--items="{/Products}" >-->
+					<!--	<columns>-->
+					<!--		<Column width="12em">-->
+					<!--			<Text text="ProductName"/>-->
+					<!--		</Column>-->
+					<!--		<Column demandPopin="true">-->
+					<!--			<Text text="ProductID"/>-->
+					<!--		</Column>-->
+					<!--		<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">-->
+					<!--			<Text text="SupplierID"/>-->
+					<!--		</Column>-->
+					<!--		<Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">-->
+					<!--			<Text text="CategoryID"/>-->
+					<!--		</Column>-->
+					<!--		<Column hAlign="End">-->
+					<!--			<Text text="UnitPrice"/>-->
+					<!--		</Column>-->
+					<!--	</columns>-->
+					<!--	<items>-->
+					<!--		<ColumnListItem>-->
+					<!--			<cells>-->
+					<!--				<Text text="{ProductName}" />-->
+					<!--				<Text text="{ProductID}"/>-->
+					<!--				<Text text="{SupplierID}"/>-->
+					<!--				<Text text="{CategoryID}"/>-->
+					<!--				<Text text="{UnitPrice}"/>-->
+					<!--			</cells>-->
+					<!--		</ColumnListItem>-->
+					<!--	</items>-->
+					<!--</Table>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
