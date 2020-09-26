@@ -1,0 +1,9 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_MSA.controller.SECOND_PRDDET" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Product Details ({ProductID})">
+				<content>
+					<Label text="Producy Name"/>
+					<Text text="{ProductName}"/>
+				</content>
+			</Page>
+</mvc:View>
