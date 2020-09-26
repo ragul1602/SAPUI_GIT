@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_PGS.controller.Second_CustDet" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App>-->
+	<!--	<pages>-->
+			<Page title="WELCOME TO SMAX">
+				<content>
+					<Text text="We are pleased to welcome you as a new customer of Doe Office Supply. We feel honored that you have chosen us to fill your business product needs, and we are eager to be of service.
+
+As you know, we carry everything your office may need. We have a great variety of products to choose from, all at competitive prices. We have a complete line of stationery and business cards for new business owners like you, at a discount of 20% for initial orders.
+
+We would be happy to visit with you at your convenience to discuss your office supply needs. Just call us at 555-5555, or come by any time between 9:00 a.m. and 6:00 p.m., Monday through Saturday. When you come in, we would like to present you with a 2019 desk calendar as a token of our appreciation for your business.
+
+Thank you again for your choice of Doe Office Supply to fill your office supply needs. We look forward to a long and successful association."/>
+				</content>
+			</Page>
+	<!--	</pages>-->
+	<!--</App>-->
+</mvc:View>

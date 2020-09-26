@@ -1,0 +1,13 @@
+
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_PGS.controller.SECOND_PAGE" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App id='FS2'>-->
+		<!--<pages>-->
+			<Page title="Customer Details ({CustomerID})">
+				<content>
+					<Text text="{ContactName}"/>
+				</content>
+			</Page>
+		<!--</pages>-->
+	<!--</App>-->
+</mvc:View>
