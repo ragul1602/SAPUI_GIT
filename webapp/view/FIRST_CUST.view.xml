@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_POP.controller.FIRST_CUST" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App>-->
+		<!--<pages>-->
+			<Page title="Customers">
+				<content>
+					<List items="{/Products}" id='list' >
+						<items>
+							<StandardListItem title="{ID}"
+							description="{ReleaseDate}"
+							type="Navigation"
+							press="onItemPress"	/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		<!--</pages>-->
+	<!--</App>-->
+</mvc:View>
