@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_NFS.controller.FIRST_CUST" xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App>-->
+		<!--<pages>-->
+			<Page title="Customers">
+				<content>
+					<Button text='Product' press='onPrd'/>
+					<List items="{/Customers}" id='list' >
+						<items>
+							<StandardListItem title="{CustomerID}"
+							description="{CompanyName}"
+							type="Navigation"
+							press="onItemPress"	/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		<!--</pages>-->
+	<!--</App>-->
+</mvc:View>

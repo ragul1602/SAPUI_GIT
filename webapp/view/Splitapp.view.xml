@@ -1,0 +1,21 @@
+<mvc:View controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_NFS.controller.Splitapp" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<!--<App id="idAppControl">-->
+	<!--	<pages>-->
+	<!--		<Page title="{i18n>title}">-->
+	<!--			<content></content>-->
+	<!--		</Page>-->
+	<!--	</pages>-->
+	<!--</App>-->
+	<App id='full'>
+			<SplitApp id='splApp'>
+			<!--mode='HideMode'-->
+		</SplitApp>
+		<!--<SplitApp id='splApp2'></SplitApp>-->
+		
+	</App>
+
+	<!--<App id="full2">-->
+	<SplitApp id='splApp2'></SplitApp>
+	<!--</App>	-->
+</mvc:View>

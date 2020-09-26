@@ -1,0 +1,156 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_NFS",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"Northwind.svc": {
+				"uri": "/Northwind_Ragav/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/Northwind.svc/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_NFS.view.Splitapp",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_NFS.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "Northwind.svc",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP_NFS.view",
+				"controlAggregation": "pages",
+				"controlId": "full",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "TargetSplitapp",
+				"pattern": "",
+				"target": ["FIRST_CUST", "Second_CustDet"]
+			}, {
+				"name": "Second_CustDet",
+				"pattern": "toDetail/{custID}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["FIRST_CUST", "Second_CustDet"]
+			}, {
+				"name": "FIRST_PRD",
+				"pattern": "prod",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["SECOND_PRDDET", "FIRST_PRD"]
+			}, {
+				"name": "SECOND_PRDDET",
+				"pattern": "prd/{prdID}",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["FIRST_PRD", "SECOND_PRDDET"]
+			}],
+			"targets": {
+				"TargetSplitapp": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Splitapp",
+					"controlId": "full",
+					"controlAggregation": "pages"
+				},
+				"FIRST_CUST": {
+					"viewType": "XML",
+					"viewName": "FIRST_CUST",
+					"controlAggregation": "masterPages",
+					"controlId": "splApp",
+					"viewLevel": 1
+				},
+				"Second_CustDet": {
+					"viewType": "XML",
+					"viewName": "Second_CustDet",
+					"controlAggregation": "detailPages",
+					"controlId": "splApp",
+					"viewLevel": 1
+				},
+				"FIRST_PRD": {
+					"viewType": "XML",
+					"viewName": "FIRST_PRD",
+					"controlAggregation": "masterPages",
+					"controlId": "splApp2",
+					"viewLevel": 1
+				},
+				"SECOND_PRDDET": {
+					"viewType": "XML",
+					"viewName": "SECOND_PRDDET",
+					"controlAggregation": "detailPages",
+					"controlId": "splApp2",
+					"viewLevel": 1
+				}
+			}
+		}
+	}
+}
