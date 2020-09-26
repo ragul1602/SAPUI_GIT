@@ -1,0 +1,16 @@
+<mvc:View controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP.controller.Splitapp" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<!--<App id="idAppControl">-->
+	<!--	<pages>-->
+	<!--		<Page title="{i18n>title}">-->
+	<!--			<content></content>-->
+	<!--		</Page>-->
+	<!--	</pages>-->
+	<!--</App>-->
+	<SplitApp id='SplApp'>
+		
+		
+	</SplitApp>
+	
+	
+</mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+xmlns:agav1="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP.Controls"
+	controllerName="COM.SMAX.SPLITAPP.ZPROJECT_ROUTER_SPLITAPP.controller.Second_CustDet" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<!--<App>-->
+	<!--	<pages>-->
+			<Page title="Customer Details ({CustomerID})">
+					<headerContent>
+			<!--<Button icon="sap-icon://action" tooltip="Share" />-->
+			<!--<Button text = 'Normal' press='onPress' type="Emphasized"/>-->
+			<agav1:rButton text='Special' hover='onHover' type="Emphasized"/>
+			
+		</headerContent>
+				<content>
+					
+					<Text text="{ContactName}"/>
+				</content>
+			</Page>
+	<!--	</pages>-->
+	<!--</App>-->
+</mvc:View>
