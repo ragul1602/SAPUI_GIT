@@ -1,0 +1,30 @@
+<mvc:View controllerName="com.smax.batch41.filter.ZBATCH41_FILTER.controller.App" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	>
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Select items="{/Customers}" id="idcountry">
+						<items>
+							<core:Item text="{Country}"/>
+						</items>
+					</Select>
+					<Button text="Get Data" press="onButtonPress"/>
+					
+					<List items="{/Customers}" id="idList" visible="false">
+						<items>
+							<StandardListItem title="{CustomerID}" description="{Country}" info="{City}"/>
+						</items>
+					</List>
+					<List items="{/Employees}">
+						<items>
+							<StandardListItem title="{EmployeeID}"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
