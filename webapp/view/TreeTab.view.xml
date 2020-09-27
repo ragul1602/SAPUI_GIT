@@ -1,0 +1,15 @@
+<mvc:View controllerName="com.smax.treetab.ZPROJECT_TREETAB1.controller.TreeTab" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Tree id="Tree" items="{path: '/Suppliers'}">
+						<StandardTreeItem title="{Address/Street}"/>
+					</Tree>
+					<!--icon="{ref}"		-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
