@@ -1,0 +1,83 @@
+<mvc:View controllerName="COM.SAMX.TABSRCH.ZPROJECT_TABLE_SRCH.controller.TABSRCH" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" height="100%">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<!--<subHeader>-->
+				<!--	<OverflowToolbar>-->
+				<!--		<SearchField liveChange=".onSearch" width="100%"/>-->
+				<!--	</OverflowToolbar>-->
+				<!--</subHeader>-->
+				<subHeader>
+					<Bar>
+						<contentLeft>
+							<SearchField search="handleSearch" liveChange="handleSearch"/>
+						</contentLeft>
+					</Bar>
+				</subHeader>
+				<content>
+					<!--List item comment			-->
+					<!--<List items="{/Customers}" id="idList" visible="true" 
+					mode="MultiSelect" growing="true" -->
+					<!--growingThreshold="50" includeItemInSelection="true"-->
+					<!--selectionChange=".onSelectionChange">-->
+					<!--	<infoToolbar>-->
+					<!--		<OverflowToolbar visible="true" id="idInfoToolbar">-->
+					<!--			<Label id="idFilterLabel"/>-->
+					<!--		</OverflowToolbar>-->
+					<!--	</infoToolbar>-->
+					<!--	<items>-->
+					<!--		<StandardListItem title="{CustomerID}" description="{Country}" info="{City}"/>-->
+					<!--	</items>-->
+					<!--</List>-->
+					<!--List item comment			-->
+					<Table mode="MultiSelect" id="idTable" 
+					includeItemInSelection="true" items="{/Employees}" visible='true' width="1200px"
+					selectionChange=".onSelectionChange">
+						<infoToolbar>
+							<OverflowToolbar visible="false" id="idInfoToolbar">
+								<Label id="idFilterLabel"/>
+							</OverflowToolbar>
+						</infoToolbar>
+						<columns>
+							<Column>
+								<Text text='Employee ID'/>
+							</Column>
+							<Column>
+								<Text text='First Name'/>
+							</Column>
+							<Column>
+								<Text text='Last Name'/>
+							</Column>
+							<Column>
+								<Text text='City'/>
+							</Column>
+							<Column>
+								<Text text='Region'/>
+							</Column>
+							<Column>
+								<Text text='Postal Code'/>
+							</Column>
+							<Column>
+								<Text text='Country'/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text='{EmployeeID}'/>
+									<Text text='{FirstName}'/>
+									<Text text='{LastName}'/>
+									<Text text='{City}'/>
+									<Text text='{Region}'/>
+									<Text text='{PostalCode}'/>
+									<Text text='{Country}'/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
