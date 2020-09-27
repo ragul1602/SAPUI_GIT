@@ -1,0 +1,47 @@
+<mvc:View controllerName="COM.SMAX.VALID.ZPROJECT_VALIDATION1.controller.VALIDATION" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<f:SimpleForm id="sf1" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1">
+						<f:content>
+							<Label text='Employee ID' required='true'/>
+							<Text text='{EmployeeID}' id ='EMPID'/>
+							<!--<Input value='{-->
+							<!--path : '{EmployeeID}' required='true' constraints : { minLength : 2 }/>-->
+							<!--<Label text='First Name'/>-->
+							<!--<Input value='{FirstName}'/>-->
+							<!--<Label text='Last Name'/>-->
+							<!--<Input value='{LastName}'/>-->
+							<Input id='emp' valueHelpRequest="handleValueHelp"
+				
+					showValueHelp="true"/>
+					<!--suggestionItems="{/ProductCollection}"-->
+							<!--liveChange="oEvent" -->
+							<!--value="{ path : '{EmployeeID}', -->
+							<!--type : 'sap.ui.model.type.String', constraints : { minLength : 2 } }"-->
+							<!--/>-->
+							<Button text="GETDATA" press="onPress"/>
+						</f:content>
+					</f:SimpleForm>
+					<f:SimpleForm id="sf2" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3"
+						labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1"
+						visible='false'>
+						<f:content>
+							<Label text='Employee ID'/>
+							<Text text='{EmployeeID}'/>
+							<Input value='{EmployeeID}'/>
+							<Label text='First Name'/>
+							<Input value='{FirstName}'/>
+							<Label text='Last Name'/>
+							<Input value='{LastName}'/>
+							<Button text="GETDATA" press="onPress"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
