@@ -1,0 +1,143 @@
+<mvc:View controllerName="com.smax.table.ZPROJECT_TABLE_ITEMSADD.controller.ITEMSADD" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<HBox>
+						<!--<Select id="dropdown" items='{/Employees}'>-->
+						<!--	<items>-->
+						<!--		<core:Item text='{EmployeeID}'/>-->
+						<!--	</items>-->
+						<!--</Select>-->
+						<!--<HBox>-->
+							<Button text='GetData' press='onPress'/>
+							<Button text='Refresh' press='onRefresh'/>
+						<!--</VBox>-->
+					</HBox>
+					<!--<f:SimpleForm id="sForm" visible='true' binding='{/Employees(2)}'>-->
+					<!--	<f:content>-->
+					<!--		<Label text='Employee ID'/>-->
+					<!--		<Text text='{EmployeeID}'/>-->
+					<!--		<Label text='First Name'/>-->
+					<!--		<Text text='{FirstName}'/>-->
+					<!--		<Label text='Last Name'/>-->
+					<!--		<Text text='{LastName}'/>-->
+					<!--	</f:content>-->
+					<!--</f:SimpleForm>-->
+					<HBox>
+					<!--<l:ResponsiveSplitter width="200%" height="80%">-->
+					<!--	<l:PaneContainer>-->
+					<!--		<l:SplitPane requiredParentWidth="800">-->
+					<!--mode="MultiSelect"-->
+								<Table showSeparators='All'  id="idTable" items="{/Employees}" 
+								visible='true' width="180px"
+								
+								>
+								<!--oTable.attachBrowserEvent("click", oController.onClick);-->
+									<columns>
+										<Column>
+											<Text text='Employee ID'/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem type="Active" press="onClick" >
+											<cells>
+												<Text text='{EmployeeID}'/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							<!--</l:SplitPane>-->
+							<!--<l:SplitPane requiredParentWidth="1200" demandPane='false'>-->
+								<Table id="idTable1" items="{/Employees}" visible='false' width="1000px">
+									<columns>
+										<Column>
+											<Text text='Employee ID'/>
+										</Column>
+										<Column>
+											<Text text='First Name'/>
+										</Column>
+										<Column>
+											<Text text='Last Name'/>
+										</Column>
+										<Column>
+											<Text text='City'/>
+										</Column>
+										<Column>
+											<Text text='Region'/>
+										</Column>
+										<Column>
+											<Text text='Postal Code'/>
+										</Column>
+										<Column>
+											<Text text='Country'/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text='{EmployeeID}'/>
+												<Text text='{FirstName}'/>
+												<Text text='{LastName}'/>
+												<Text text='{City}'/>
+												<Text text='{Region}'/>
+												<Text text='{PostalCode}'/>
+												<Text text='{Country}'/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+					<!--		</l:SplitPane>-->
+					<!--	</l:PaneContainer>-->
+					<!--</l:ResponsiveSplitter>-->
+					
+<!--<!-**********New code for items add table********-->
+					<Table id="idTable2"  visible='true' width="1000px">
+									<columns>
+										<Column>
+											<Text text='Employee ID'/>
+										</Column>
+										<Column>
+											<Text text='First Name'/>
+										</Column>
+										<Column>
+											<Text text='Last Name'/>
+										</Column>
+										<Column>
+											<Text text='City'/>
+										</Column>
+										<Column>
+											<Text text='Region'/>
+										</Column>
+										<Column>
+											<Text text='Postal Code'/>
+										</Column>
+										<Column>
+											<Text text='Country'/>
+										</Column>
+									</columns>
+									<items>
+										<ColumnListItem>
+											<cells>
+												<Text text='{EmployeeID}'/>
+												<Text text='{FirstName}'/>
+												<Text text='{LastName}'/>
+												<Text text='{City}'/>
+												<Text text='{Region}'/>
+												<Text text='{PostalCode}'/>
+												<Text text='{Country}'/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+<!--<!-**********New code for items add table********-->								
+					
+					</HBox>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
