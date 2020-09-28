@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="emax.cls05.ZCLS05SPLITAPP.controller.ProductList">
+	<Page title="Product List">
+		<subHeader>
+			<Toolbar>
+				<SearchField search="onSearch" width="100%"/>
+			</Toolbar>
+		</subHeader>
+		<content>
+			<List items="{/Products}" id="idList">
+
+				<items>
+					<StandardListItem title="{ProductID}" description="{Name}" type="Navigation" press="onItemSelection"/>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>
