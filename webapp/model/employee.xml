@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <d>
+      <results>
+         <element>
+            <email>john.deo@hotmail.com</email>
+            <firstName>John</firstName>
+            <lastName>De&amp;o</lastName>
+            <pernr>11608</pernr>
+         </element>
+         <element>
+            <email>thomas.black@hotmail.com</email>
+            <firstName>Thomas</firstName>
+            <lastName>Black</lastName>
+            <pernr>21525</pernr>
+         </element>
+         <element>
+            <email>david.garnar@hotmail.com</email>
+            <firstName>David</firstName>
+            <lastName>Garnar</lastName>
+            <pernr>40038434</pernr>
+         </element>
+      </results>
+   </d>
+</root>

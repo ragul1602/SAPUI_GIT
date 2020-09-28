@@ -1,0 +1,20 @@
+{
+	"d": {
+		"results": [{
+			"pernr": 11608,
+			"firstName": "John",
+			"lastName": "Deo",
+			"email": "john.deo@hotmail.com"
+		}, {
+			"pernr": 21525,
+			"firstName": "Thomas",
+			"lastName": "Black",
+			"email": "thomas.black@hotmail.com"
+		}, {
+			"pernr": 40038434,
+			"firstName": "David",
+			"lastName": "Garnar",
+			"email": "david.garnar@hotmail.com"
+		}]
+	}
+}
