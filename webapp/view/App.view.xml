@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.batch41.table.ZBATCH41_TABLES.controller.App" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Employee List">
+				<content>
+					<Table items="{ path : '/d/results/element', sorter : { path : 'firstName', descending : true }}">
+						<columns>
+							<Column>
+								<Text text="Employee Number"/>
+							</Column>
+							<Column>
+								<Text text="Full Name"/>
+							</Column>
+							<Column>
+								<Text text="Email"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{pernr}"/>
+									<Text text="{firstName} {lastName}"/>
+									<Text text="{email}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
