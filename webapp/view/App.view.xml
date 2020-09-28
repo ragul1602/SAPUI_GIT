@@ -1,0 +1,30 @@
+<mvc:View controllerName="com.smax.odata.ZBATCH41_READ_ODATA.controller.App" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m"
+		xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false"
+							binding="{/Customers('ANATR')}"
+							>
+							<f:content>
+								<Label text="Customer ID"/>
+								<Text id="nameText" text="{CustomerID}"/>
+								<Label text="Company Name"/>
+								<Text text="{CompanyName}"/>
+								<Label text="Contact Name"/>
+								<Text text="{ContactName}"/>
+								<Label text="Contact Title"/>
+								<Text id="countryText" text="{ContactTitle}"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+			 </content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
