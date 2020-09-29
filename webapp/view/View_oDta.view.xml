@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.smax.odata.ZPROJECT_DEMO10.controller.View_oDta" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table items="{/Customers}">
+						
+					<ColumnListItem>
+								<Text text = "{CompanyName}"/>
+							
+							<!--title="{CompanyName}" description="{CustomerID}"/>-->
+							
+							</ColumnListItem>	
+						
+					</Table>
+					
+					
+					<!--<List items="{/Customers}">-->
+					<!--	<items>-->
+					<!--		<ColumnListItem>-->
+					<!--			<Text text = "{CompanyName}"/>-->
+							
+							<!--title="{CompanyName}" description="{CustomerID}"/>-->
+							
+					<!--		</ColumnListItem>-->
+					<!--	</items>-->
+					<!--</List>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
