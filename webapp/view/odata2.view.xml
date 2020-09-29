@@ -1,0 +1,50 @@
+<mvc:View controllerName="com.smax.odata2.ZPROJECT_DEMO15.controller.odata2" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<!--<f:SimpleForm binding='{/Employees(3)}'-->
+					
+					<!-->-->
+					<!--	<f:content>-->
+					<!--	<Label text='Employee ID'/>-->
+					<!--	<Text  text='{EmployeeID}'/>-->
+						<!--<Input value='{EmployeeID}'/>-->
+					<!--	<Label text='First Name'/>-->
+					<!--	<Input value='{FirstName}'/>-->
+					<!--	<Label text='Last Name'/>-->
+					<!--	<Input value='{LastName}'/>-->
+				
+					<!--	</f:content>-->
+					<!--</f:SimpleForm>-->
+					
+					
+					
+						<Table items="{/Customers}">
+						<columns>
+							<Column>
+								<Text text="COMPANY NAME"/>
+							</Column>
+							<Column>
+								<Text text="Phone"/>
+							</Column>
+							<!--<Column>-->
+							<!--	<Text text="{p1>email}"/>-->
+							<!--</Column>-->
+						</columns>
+						<items>
+							<ColumnListItem>
+								<Text text="{CompanyName}"/>
+								<Text text="{Phone}"/>
+								<!--title="{CompanyName}" description="{CustomerID}"/>-->
+							</ColumnListItem>
+						</items>
+						</Table>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
