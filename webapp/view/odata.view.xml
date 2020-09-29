@@ -1,0 +1,16 @@
+<mvc:View controllerName="COM.SMAX.ODATA13.ZPROJECT_DEMO13.controller.odata" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<List items="{/Customers}">
+						<items>
+							<StandardListItem title="{CompanyName}" description="{CustomerID}" info="{Phone}"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
