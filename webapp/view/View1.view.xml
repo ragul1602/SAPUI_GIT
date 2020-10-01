@@ -1,0 +1,20 @@
+<view xmlns:mvc="sap.ui.core.mvc" xmlns = "sap.m">
+	<app>
+		<Pages>
+			<Page title="TABLE DISPLAY">
+				
+				
+				
+				
+				
+			</Page>
+			
+			
+		</Pages>
+
+		
+		
+	</app>
+	
+	
+	</view>
