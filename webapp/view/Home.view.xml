@@ -1,0 +1,86 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title='MY FIRST PAGE DISPLAY' showFooter="true">
+				<content>
+					<form:SimpleForm
+					editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false">
+						<form:title>
+							<core:Title text="My FIrst XML Testing"></core:Title>
+						</form:title>
+						<form:toolbar>
+							<Toolbar ariaLabelledBy = "Title2">
+								
+								
+								
+								<content>
+									
+									<Image activeSrc='' src='Forex.jpg' height='200%' width='30%'/>
+									<Title id="Title2" text="Banking Type" level="H5" titleStyle="H5"/>
+								
+									<Button text="NRI" width="50%"></Button>
+								</content>
+							</Toolbar>
+						</form:toolbar>
+						<form:content>
+							<Carousel>
+								<pages>
+									<Image activeSrc='' src='newlogo.png' height='35%' width='70%'/>
+									<Image activeSrc='' src='Forex.jpg' height='35%' width='70%'/>
+								</pages>
+							</Carousel>
+							
+							<Button text = "Personal"/>
+							<Button text = "NRI" ></Button>
+							<Button text = "SME"></Button>
+							<Button text = "Wholesale"></Button>
+							<Button text = "Agri"></Button> 
+							<!--//type = "Accept"-->
+							
+							
+							
+							<Label text="Login ID"></Label>
+							<Input></Input>
+							<Label text="Password"></Label>
+							<Input/>
+							<Button text="LOGIN" press="onLogin"/>
+						</form:content>
+					</form:SimpleForm>
+				</content>
+				<subHeader>
+					<Bar>
+						<contentRight>
+							<Button icon="sap-icon://edit"></Button>
+							<Button icon="sap-icon://action"></Button>
+							<Button icon="sap-icon://navigation-up-arrow"></Button>
+							<Button icon="sap-icon://download" text="Download"></Button>
+						</contentRight>
+					</Bar>
+				</subHeader>
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button text="Approve" type="Accept"  icon="sap-icon://accept"/>
+							<Button text="Reject" type="Reject" icon="sap-icon://decline"/>
+						</contentRight>
+						</Bar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</mvc:View>
