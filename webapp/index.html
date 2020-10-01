@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ZRAGAV_DEMO1</title>
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-resourceroots='{"com.wipro.demo.ZRAGAV_DEMO1": "./"}'
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="sync"
+			data-sap-ui-libs="sap.m">
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+
+
+
+var odta2 ={},oDta3 = {};
+odta2 = new sap.m.Label({vAlign : "middle", text : "Employee No", textAlign : "Center"});
+//odta2.placeAt("content");
+
+var odta1;
+odta1 = new sap.m.InputBase({editable : true, placeholder : 'Please enter', maxLength : '50'});
+//odta1.placeAt("content");
+
+var odta12;
+odta12 = new sap.m.Input({placeholder : 'CTC SALARY', description : "INR", showValueHelp : true});
+//odta12.placeAt("content");
+
+
+var odta13;
+odta13 = new sap.m.MultiInput({enableMultiLineMode : true});
+//odta13.placeAt("content");
+
+
+
+var odta;
+odta = new sap.m.Button({text : "Login", width : "50%", type : sap.m.ButtonType.Back});
+//odta.placeAt("content");
+
+
+var oBox1 = new sap.m.HBox ({ items : [ odta1, odta12 ]});
+
+var oBox = new sap.m.VBox({
+	items : [
+	oBox1,
+	odta13,
+	odta ]
+	
+});
+//	oBox1.placeAt("content");
+	oBox.placeAt("content");
+
+new sap.m.Select({
+	items : [
+	new sap.ui.core.Item({ text : "INDIA" }),
+	new sap.ui.core.Item({ text : "ENGLAND" }),
+	new sap.ui.core.Item({ text : "USA" }),
+	new sap.ui.core.Item({ text : "DUBAI" })
+	]
+}).placeAt("content");
+
+var oDta20 = new sap.ui.layout.form.SimpleForm();
+
+		</script>
+	</head>
+	<body class="sapUiBody" id="content">
+	</body>
+</html>
