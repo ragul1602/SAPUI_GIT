@@ -1,0 +1,164 @@
+<View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!--<App>-->
+	<!--	<Pages>-->
+	<!--	<Page>-->
+	<!--		<content>-->
+	<Table>
+		<columns>
+			<Column width="12em">
+				<Text text="PERNR"/>
+			</Column>
+			<Column width="12em">
+				<Text text="Employee Name"/>
+			</Column>
+			<Column width="12em">
+				<Text text="Department"/>
+			</Column>
+		</columns>
+		<!--<items>-->
+			<ColumnListItem>
+				<cells>
+					<Text text="12345"/>
+					<Text text="Ragav"/>
+					<Button text="PUSH"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="54321"/>
+					<Text text="Jai"/>
+					<Button text="PUSH1"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="33333"/>
+					<Text text="King"/>
+					<Button text="PUSH2"/>
+				</cells>
+			</ColumnListItem>
+		<!--</items>-->
+	</Table>
+</View>
+<!--		</content>-->
+<!--	</Page>	-->
+<!--	</Pages>-->
+<!--</App>-->
+<!--<Table headerText="PRODUCT INFORMATION" -->
+<!--id="idProductsTable">-->
+<!--inset="false"-->
+<!--items="{-->
+<!--	path: '/ProductCollection',-->
+<!--	sorter: {-->
+<!--		path: 'Name'-->
+<!--	}-->
+<!--}">-->
+<!--<headerToolbar>-->
+<!--	<Toolbar>-->
+<!--		<content>-->
+<!--			<Title text="Products" level="H2"/>-->
+<!--			<ToolbarSpacer />-->
+<!--			<ComboBox id="idPopinLayout"-->
+<!--				placeholder="Popin layout options"-->
+<!--				change="onPopinLayoutChanged">-->
+<!--				<items>-->
+<!--					<core:Item  text="Block"-->
+<!--						key="Block"/>-->
+<!--					<core:Item  text="Grid Large"-->
+<!--						key="GridLarge"/>-->
+<!--					<core:Item  text="Grid Small"-->
+<!--						key="GridSmall"/>-->
+<!--				</items>-->
+<!--			</ComboBox>-->
+<!--			<MultiComboBox id="idSticky"-->
+<!--				placeholder="Sticky options"-->
+<!--				selectionFinish="onSelectionFinish"-->
+<!--				width="15%">-->
+<!--				<items>-->
+<!--					<core:Item  text="Column headers"-->
+<!--						key="ColumnHeaders"/>-->
+<!--					<core:Item  text="Header Toolbar"-->
+<!--						key="HeaderToolbar"/>-->
+<!--					<core:Item  text="Info Toolbar"-->
+<!--						key="InfoToolbar"/>-->
+<!--				</items>-->
+<!--			</MultiComboBox>-->
+<!--			<ToggleButton id="toggleInfoToolbar"-->
+<!--				text="Hide/Show InfoToolbar"-->
+<!--				press="onToggleInfoToolbar" />-->
+<!--		</content>-->
+<!--	</Toolbar>-->
+<!--</headerToolbar>-->
+<!--<infoToolbar>-->
+<!--	<Toolbar active="ture">-->
+<!--		<Label text="Wide range of available products"/>-->
+<!--	</Toolbar>-->
+<!--</infoToolbar>-->
+<!--		<columns>-->
+<!--			<Column-->
+<!--				width="12em">-->
+<!--				<Text text="Product" />-->
+<!--			</Column>-->
+<!--			<Column-->
+<!--				minScreenWidth="Tablet"-->
+<!--				demandPopin="true">-->
+<!--				<Text text="Supplier" />-->
+<!--			</Column>-->
+<!--			<Column-->
+<!--				minScreenWidth="Desktop"-->
+<!--				demandPopin="true"-->
+<!--				hAlign="End">-->
+<!--				<Text text="Dimensions" />-->
+<!--			</Column>-->
+<!--			<Column-->
+<!--				minScreenWidth="Desktop"-->
+<!--				demandPopin="true"-->
+<!--				hAlign="Center">-->
+<!--				<Text text="Weight" />-->
+<!--			</Column>-->
+<!--			<Column-->
+<!--				hAlign="End">-->
+<!--				<Text text="Price" />-->
+<!--			</Column>-->
+<!--		</columns>-->
+<!--		<items>-->
+<!--			<ColumnListItem>-->
+<!--				<cells>-->
+<!--					<ObjectIdentifier-->
+<!--						title="{Name}"-->
+<!--						text="{ProductId}"/>-->
+<!--					<Text-->
+<!--						text="{SupplierName}" />-->
+<!--					<Text-->
+<!--						text="{Width} x {Depth} x {Height} {DimUnit}" />-->
+<!--					<ObjectNumber-->
+<!--						number="{WeightMeasure}"-->
+<!--						unit="{WeightUnit}"-->
+<!--						state="{-->
+<!--							parts: [-->
+<!--								{path: 'WeightMeasure'},-->
+<!--								{path: 'WeightUnit'}-->
+<!--							],-->
+<!--							formatter: 'sap.m.sample.Table.Formatter.weightState'-->
+<!--						}" />-->
+<!--					<ObjectNumber-->
+<!--							number="{-->
+<!--								parts:[{path:'Price'},{path:'CurrencyCode'}],-->
+<!--								type: 'sap.ui.model.type.Currency',-->
+<!--								formatOptions: {showMeasure: false}-->
+<!--							}"-->
+<!--							unit="{CurrencyCode}" />-->
+<!--				</cells>-->
+<!--			</ColumnListItem>-->
+<!--		</items>-->
+<!--	</Table>-->
+<!--</mvc:View>-->
+<!--<StandardListItem title="NAME"-->
+<!--			description="ProductId" info="HP Laptop" infoState="Success"/>-->
+<!--				<StandardListItem title="NAME1"-->
+<!--			description="ProductId1" info="Acer Laptop" infoState="Warning" />-->
+<!--				<StandardListItem title="NAME2"-->
+<!--			description="ProductId2" info="Acer Laptop" infoState="Error"/>-->
+<!--					<customData>-->
+<!--					<c:customData key="HP" value="Pavilion 3130"/>-->
+<!--					</customData>-->
