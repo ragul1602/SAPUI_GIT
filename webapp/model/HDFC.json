@@ -1,0 +1,64 @@
+{
+
+	"text1": "Personal",
+	"text2": "NRI",
+	"text3": "SME",
+	"text4": "Wholesale",
+	"text5": "Agri",
+	"default": "8500XXXX",
+	"log": "LOGIN ID",
+	"pass": "PASSWORD",
+	"logid": "12345321",
+
+	"h1": "200%",
+	"w1": "10%",
+	"title": "HDFC Banking INDIA",
+	"design": {
+
+		"nl": "newlogo.png",
+		"img": "Forex.jpg",
+		"img2": "SUMMER.JPG",
+		"h": "20%",
+		"w": "30%"
+	},
+
+	"address":
+
+	{
+		"email": "HDFCBANK@bank.com",
+		"contact": "9842012345"
+
+	},
+
+	"bank": [{
+			"type": "Personal"
+		}, {
+			"type": "NRI"
+		}, {
+			"type": "SME"
+		}
+
+	],
+
+	"button": [
+
+		{
+			"text": "Personal"
+		}, {
+			"text": "NRI"
+		}, {
+			"text": "SME"
+		}, {
+			"text": "Wholesale"
+		}, {
+			"text": "Agri"
+		}
+
+	],
+	"login":
+
+		[
+
+	]
+
+}

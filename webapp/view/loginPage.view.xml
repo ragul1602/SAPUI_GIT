@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.smax.proj.ZRAGAV_DEMO7.controller.loginPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title=
+			"{m1>ptitle}">
+				<!--<content></content>-->
+				<content>
+					<Label text="Login ID"></Label>
+							<Input></Input>
+							<Label text="Password"></Label>
+							<Input/>
+					<Button text="LOGIN" press="onfirst"/>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,16 @@
+<mvc:View controllerName="com.smax.proj.ZRAGAV_DEMO7.controller.View1" xmlns:mvc="sap.ui.core.mvc"
+xmlns:html="http://www.w3.org/1999/xhtml"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<mvc:XMLView viewName="com.smax.proj.ZRAGAV_DEMO7.view.homePage"/>
+			<mvc:XMLView viewName="com.smax.proj.ZRAGAV_DEMO7.view.loginPage"/>
+			
+			
+			
+			<!--<Page title="{i18n>title}">-->
+			<!--	<content></content>-->
+			<!--</Page>-->
+		</pages>
+	</App>
+</mvc:View>

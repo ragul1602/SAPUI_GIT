@@ -1,0 +1,172 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+	controllerName="com.smax.proj.ZRAGAV_DEMO7.controller.homePage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title='{p1>title}' showFooter="true">
+				<content>
+					<form:SimpleForm>
+						<!--<form:title>-->
+						<!--	<core:Title text="My FIrst XML Testing"></core:Title>-->
+						<!--</form:title>-->
+						<form:toolbar>
+							<Toolbar>
+								<content>
+									<Image activeSrc='' src='{/design/img}' height='{/h1}' width='{/w1}'/>
+									<!--<Title id="Title2" text="Banking Type" level="H5" titleStyle="H5"/>-->
+									<Button text="{/text2}" width='{/w1}'></Button>
+								</content>
+							</Toolbar>
+						</form:toolbar>
+						<form:content>
+							<!--***Element Binding****	-->
+							<!--11/06/2020-->
+							<!--<Carousel binding="{/design}">-->
+							<!--	<pages>-->
+							<!--		<Image activeSrc='' src='{nl}' height='{h}' width='{w}'/>-->
+							<!--		<Image activeSrc='' src='{/design/img}' height='{h}' width='{w}'/>-->
+							<!--	</pages>-->
+							<!--</Carousel>-->
+							<!--11/06/2020	-->
+							<Carousel id="car" showPageIndicator="false" binding="{/design}" loop="true" pageChanged="onCar">
+								<pages>
+									<!--visible="{=!${device>/system/phone}}"-->
+									<!--tooltip="{i18n>welcomeDescription}">-->
+									<!--<Page>-->
+									<VBox renderType="Bare">
+										<!--<Image-->
+										<!--	src="{-->
+										<!--		path: '.Forex.jpg',-->
+										<!--		formatter : '.formatter.pictureUrl'-->
+										<!--		}"-->
+										<!--	width="100%"-->
+										<!--	height="100%"/>-->
+										<!--<Text-->
+										<!--	text="{i18n>welcomeCarouselShipping}"-->
+										<!--	class="welcomeCarouselText"/>-->
+										<Image activeSrc='' src='newlogo.png' height='{h}' width='{w}'/>
+										<!--src='{nl}'-->
+									</VBox>
+									<!--</Page>-->
+									<!--<Page>-->
+									<VBox renderType="Bare">
+										<Image activeSrc='' src='{img}' height='50%' width='50%'/>
+										<!--<Image-->
+										<!--	src="{-->
+										<!--		path: 'newlogo.png',-->
+										<!--		formatter : '.formatter.pictureUrl'-->
+										<!--	}"-->
+										<!--	width="100%"-->
+										<!--	height="100%"/>-->
+										<!--<Text-->
+										<!--	text="{i18n>welcomeCarouselInviteFriend}"-->
+										<!--	class="welcomeCarouselText"/>-->
+										<!--</VBox>-->
+										<!--<VBox renderType="Bare">-->
+										<!--	<Image-->
+										<!--		src="{-->
+										<!--			path: 'view>/welcomeCarouselTablet',-->
+										<!--			formatter : '.formatter.pictureUrl'-->
+										<!--			}"-->
+										<!--		width="100%"-->
+										<!--		height="100%"/>-->
+										<!--	<Text-->
+										<!--		text="{i18n>welcomeCarouselTablet}"-->
+										<!--		class="welcomeCarouselText"/>-->
+										<!--</VBox>-->
+										<!--<VBox renderType="Bare">-->
+										<!--	<Image-->
+										<!--		src="{-->
+										<!--			path: 'view>/welcomeCarouselCreditCard',-->
+										<!--			formatter : '.formatter.pictureUrl'-->
+										<!--			}"-->
+										<!--		width="100%"-->
+										<!--		height="100%"/>-->
+										<!--	<Text-->
+										<!--		text="{i18n>welcomeCarouselCreditCard}"-->
+										<!--		class="welcomeCarouselText"/>-->
+									</VBox>
+									<VBox renderType="Bare">
+										<Image class="sapUiLargeMarginBegin" activeSrc='' src='SUMMER.jpg' height='90%' width='80%'/>
+									</VBox>
+									<!--</Page>-->
+								</pages>
+							</Carousel>
+							<!--*****Agreegation Binding-->
+							<HBox items="{/button}">
+								<Button text="{text}"/>
+								<!--<Button text="{/text1}"/>-->
+								<!--<Button text="{/text2}"></Button>-->
+								<!--<Button text="{/text3}"></Button>-->
+								<!--<Button text="{/text4}"></Button>-->
+								<!--<Button text="{/text5}"></Button>-->
+							</HBox>
+						</form:content>
+					</form:SimpleForm>
+					<form:SimpleForm >
+						<!--editable="false" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12"-->
+						<!--	adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2"-->
+						<!--	singleContainerFullSize="false">-->
+						<form:content >
+							<!--//type = "Accept"-->
+							<Label text="{/log}" required='rue'></Label>
+							<!--type='Number'-->
+							<!--value = "{/logid}"-->
+							<!--valueState = "{=($(/logid) === '' ? 'Error' : 'None' }"-->
+							<Input id='id' value="{/logid}" valueStateText="Please enter Login Id" valueState="{=(${/logid} === '') ? 'Error' : 'None' }"></Input>
+							<Label text="{/pass}"></Label>
+							<Input type="Password"/>
+							<Select items="{/bank}">
+								<items>
+									<core:Item text="{type}"/>
+								</items>
+							</Select>
+							<Button text="LOGIN" press="onLogin"/>
+						</form:content>
+					</form:SimpleForm>
+				</content>
+				<!--<subHeader>-->
+				<!--	<Bar>-->
+				<!--		<contentRight>-->
+				<!--			<Button icon="sap-icon://edit"></Button>-->
+				<!--			<Button icon="sap-icon://action"></Button>-->
+				<!--			<Button icon="sap-icon://navigation-up-arrow"></Button>-->
+				<!--			<Button icon="sap-icon://download" text="Download"></Button>-->
+				<!--		</contentRight>-->
+				<!--	</Bar>-->
+				<!--</subHeader>-->
+				<footer>
+					<!--element binding-->
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Bar design="Footer" id="S1">
+							<contentLeft>
+								<Button text="Register Online"/>
+								<!--icon="sap-icon://accept"/>-->
+								<Button text="Chat With EVA" type="Reject"/>
+								<!--icon="sap-icon://decline"/>-->
+							</contentLeft>
+							<contentMiddle>
+								<HBox>
+									<Label text="Email-ID:"/>
+									<Text text="{email}"></Text>
+									<!--<Label text="Contact No:"/>-->
+									<!--<Text text="{contact}"/>-->
+								</HBox>
+							</contentMiddle>
+							<contentRight>
+								<Label/>
+								<Label text="Contact No:"/>
+								<Text text="{contact}"/>
+							</contentRight>
+							<!--</VBox>-->
+							<!--<VBox>-->
+							<!--<Label text= "Contact No:"/>-->
+							<!--<Text text="{contact}"/>-->
+							<!--</VBox>-->
+						</Bar>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
