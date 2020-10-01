@@ -1,0 +1,11 @@
+<mvc:View id="idApp" controllerName="com.smax.navigat.ZRAGAV_DEMO6.controller.Home_Page" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m"  xmlns:cc="sap.ui.core">
+	<App id="idAppControl">
+		<pages>
+		
+					<mvc:XMLView viewName="com.smax.navigat.ZRAGAV_DEMO6.view.firstPage" id="firstPage"/>
+					<mvc:XMLView viewName="com.smax.navigat.ZRAGAV_DEMO6.view.secondPage" id="secondPage"/>
+			
+		</pages>
+	</App>
+</mvc:View>

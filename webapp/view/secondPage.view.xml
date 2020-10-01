@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.smax.navigat.ZRAGAV_DEMO6.controller.secondPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Second Page">
+				<content>
+					<Button text="Goto_firstpage" press="onfirst"/>
+					
+				</content> 
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,50 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.smax.navigat.ZRAGAV_DEMO6.controller.firstPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="First Page">
+				<content>
+					<Table>
+		<columns>
+			<Column width="12em">
+				<Text text="PERNR"/>
+			</Column>
+			<Column width="12em">
+				<Text text="Employee Name"/>
+			</Column>
+			<Column width="12em">
+				<Text text="Department"/>
+			</Column>
+		</columns>
+		<!--<items>-->
+			<ColumnListItem>
+				<cells>
+					<Text text="12345"/>
+					<Text text="Ragav"/>
+					<Button text="PUSH"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="54321"/>
+					<Text text="Jai"/>
+					<Button text="PUSH1"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="33333"/>
+					<Text text="King"/>
+					<Button text="PUSH2"/>
+				</cells>
+			</ColumnListItem>
+		<!--</items>-->
+	</Table>
+	<Button text="Goto_Secondpage" press="onNextPage" class="cssDesign"/>
+					
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
