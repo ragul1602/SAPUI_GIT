@@ -1,0 +1,18 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="sap.yardSAPYARD_ELEMENT_BINDING.controller.Aggregation" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Expression Binding Page">
+		<content>
+			<List id="idTable" items="{/animals}">
+				<items>
+					<ObjectListItem title="{name}" 
+					number="{available}" 
+					number="{born}"
+					numberUnit="available" 
+					numberState="{= ${available} > 50 ? 'Success' : 'Error' }">
+						
+					</ObjectListItem>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>
