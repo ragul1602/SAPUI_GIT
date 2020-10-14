@@ -1,0 +1,25 @@
+{
+	
+	"title" : "Employee Data",
+	
+	"name" : "Ragav",
+	"no" : "967007",
+	"address" :[
+	
+{
+	"mobile":"9042082345",
+	"email" : "ragul1602@gmail.com",
+	"landline" : "0452-2238901"
+	
+},
+{
+
+	"mobile":"123456789",
+	"email" : "ragave1602@gmail.com",
+	"landline" : "0452-1234567"
+}	
+
+]
+
+	
+}

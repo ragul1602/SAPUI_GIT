@@ -1,0 +1,63 @@
+<mvc:View controllerName="com.smax.databind1.ZPROJECT_DEMO8.controller.app_ragav" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Reliance Industry">
+				<content>
+					<!--<VBox>-->
+					<form:SimpleForm id="S1">
+						<!--layout="ResponsiveGridLayout"-->
+						<!--title="Address"-->
+						<!--labelSpanXL="4"-->
+						<!--labelSpanL="3"-->
+						<!--labelSpanM="4"-->
+						<!--labelSpanS="12"-->
+						<!--adjustLabelSpan="false"-->
+						<!--emptySpanXL="0"-->
+						<!--emptySpanL="4"-->
+						<!--emptySpanM="0"-->
+						<!--emptySpanS="0"-->
+						<!--columnsXL="2"-->
+						<!--columnsL="1"-->
+						<!--columnsM="1"-->
+						<!--singleContainerFullSize="false"-->
+						<form:title>
+							<core:Title text="{/title}"/>
+						</form:title>
+						<form:content>
+							<Label text="Employee Name"/>
+							<Text text="{/name}"/>
+							<Label text="EmpID"/>
+							<Text text="{/no}"/>
+							<Label text="Email"/>
+							<Text text="{email}"/>
+							<Label text="mobileno"/>
+							<Text text="{/address/0/mobile}"/>
+							<Label text="landline"/>
+							<Text text="{/address/0/landline}"/>
+							<!--<br></br>-->
+						</form:content>
+					</form:SimpleForm>
+					<form:SimpleForm binding="{/address/1/}">
+						<form:content>
+							<!--<VBox>-->
+							<Label text="Employee Name"/>
+							<Text text="{/name}"/>
+							<Label text="EmpID"/>
+							<Text text="{/no}"/>
+							<Label text="Email"/>
+							<Text text="{email}"/>
+							<Label text="mobileno"/>
+							<Text text="{/address/1/mobile}"/>
+							<Label text="landline"/>
+							<Text text="{/address/1/landline}"/>
+							<!--</VBox>-->
+						</form:content>
+					</form:SimpleForm>
+					<!--</Vbox>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
