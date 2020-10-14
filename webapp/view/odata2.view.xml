@@ -1,0 +1,58 @@
+<mvc:View controllerName="com.smax.odata2.ZPROJECT_DEMO16.controller.odata2" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox>
+						<f:SimpleForm binding='{/Employees(3)}'>
+							<f:content>
+								<Label text='Employee ID'/>
+								<Text text='{EmployeeID}'/>
+								<!--<Input value='{EmployeeID}'/>-->
+								<Label text='First Name'/>
+								<!--<Input value='{FirstName}'/>-->
+								<Text text='{FirstName}'/>
+								<Label text='Last Name'/>
+								<!--<Input value='{LastName}'/>-->
+								<Text text='{LastName}'/>
+								<Label text='BirthDate'/>
+								<Text text='{BirthDate}'/>
+								<Label text='HireDate'/>
+								<Text text='{HireDate}'/>
+								<Label text='City'/>
+								<Text text='{City}'/>
+							</f:content>
+						</f:SimpleForm>
+						<f:SimpleForm binding='{/Employees(2)}'>
+							<f:content>
+								<Label text='Employee ID'/>
+								<Text text='{EmployeeID}'/>
+								<!--<Input value='{EmployeeID}'/>-->
+								<Label text='First Name'/>
+								<!--<Input value='{FirstName}'/>-->
+								<Text text='{FirstName}'/>
+								<Label text='Last Name'/>
+								<!--<Input value='{LastName}'/>-->
+								<Text text='{LastName}'/>
+							</f:content>
+						</f:SimpleForm>
+						<f:SimpleForm binding='{/Employees(1)}'>
+							<f:content>
+								<Label text='Employee ID'/>
+								<Text text='{EmployeeID}'/>
+								<!--<Input value='{EmployeeID}'/>-->
+								<Label text='First Name'/>
+								<!--<Input value='{FirstName}'/>-->
+								<Text text='{FirstName}'/>
+								<Label text='Last Name'/>
+								<!--<Input value='{LastName}'/>-->
+								<Text text='{LastName}'/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
