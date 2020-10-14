@@ -1,0 +1,42 @@
+<mvc:View controllerName="com.smax.tab.ZPROJECT_DEMO9.controller.secondPage1" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table items="{path : '/d/results/',sorter  : { path : 'lastName', descending : true }}" showOverlay='True'>
+					<columns>
+						<Column>
+							<Text text="Employee Number"/>
+							</Column>
+							<Column>
+							<Text text="Employee Name"/>
+							</Column>
+							<Column>
+							<Text text="Employee Email"/>
+							</Column>
+					</columns>	
+					<items>
+						<ColumnListItem> 
+						<!--<cells>-->
+							<Text text='{pernr}'/>
+							<Text text='{firstName} {lastName}'/>
+							<Text text='{email}'/>
+							
+						<!--</cells>-->
+						</ColumnListItem>
+						
+					</items>
+						
+						
+					</Table>
+					
+					
+				</content>
+			</Page>
+			
+			
+			
+		</pages>
+		</App>
+		</mvc:View>

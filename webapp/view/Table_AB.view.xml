@@ -1,0 +1,14 @@
+<mvc:View controllerName="com.smax.tab.ZPROJECT_DEMO9.controller.Table_AB" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			
+			<mvc:XMLView viewName = "com.smax.tab.ZPROJECT_DEMO9.view.firstPage1"/>
+			<mvc:XMLView viewName = "com.smax.tab.ZPROJECT_DEMO9.view.secondPage1"/>
+		    <!--<mvc:XMLView viewName = "com.smax.tab.ZPROJECT_DEMO9.view.secondPage"/>-->
+		
+		
+			
+		</pages>
+	</App>
+</mvc:View>
